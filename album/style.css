@@ -1,0 +1,109 @@
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+    background-color: white;
+    color: black;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barre_entete {
+    background-color: rgb(255, 0, 93);
+    padding: 15px;
+}
+
+.barre_entete h1 {
+    font-size: small;
+    color: white;
+}
+
+.barre_entete a {
+    text-decoration: none;
+}
+
+.barre_entete a img {
+    width: 100px;
+    transition: 0.5s;
+}
+
+.barre_entete a img:hover {
+    width: 110px;
+}
+
+.Link_barrre {
+    float: right;
+}
+
+/*********************************************header caroussel***********************************/
+header {
+    text-align: center;
+    padding: 50px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    background-image: url("album/fond.jpg");
+    background: linear-gradient(to bottom, transparent, mistyrose), url("album/fond.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    word-wrap: break-word;
+    background-position: center;
+}
+
+header h2 {
+    font-size: 60px;
+    color: white;
+    padding-top: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header p{
+    color: white;
+    color: rgb(255, 0, 93);
+}
+header h3 {
+    color: white;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
+header a:hover {
+    letter-spacing: 2px;
+}
+
+/*******************************************************/
+main{
+    padding: 20px;
+}
+.main_contenaire{
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.main_contenaire div{
+    margin: 50px;
+    flex-basis: 20%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 5px gainsboro;
+    border-radius: 10px;
+}
+.main_contenaire div p{
+    text-align: justify;
+}
+.main_contenaire div img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+}
+

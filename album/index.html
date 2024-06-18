@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>le cercle de codeurs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="barre_entete">
+        <h1>le cercle des codeurs <span class="Link_barrre"><a aria-label="Chat on WhatsApp"
+                    href="https://wa.me/+243828588141" title="contatez-nous via WhatsApp">
+                    <img alt="Chat on WhatsApp" src="album/WhatsAppButtonGreenMedium.png" /></a></span></h1>
+    </div>
+
+    <!--------------------header bloc des caroussel---------------------------->
+    <header class="blocDescaroussel">
+        <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <div class="splide__list">
+                    <div class="splide__slide">
+                        <h2>Trouvez ce qui vous rend unique </h2>
+                        <p><i>"L'important dans <strong>la transformation numérique</strong> ce n'est pas la
+                                technologie, c'est la <strong> culture</strong>"</i></p>
+                        <h3>C'est la qualité qui compte </h3>
+                        <a href="#">en savoir plus</a>
+                        <a href="#">découvrir plus</a>
+                    </div>
+                    <div class="splide__slide">
+                        <h2>Un Impact Rapide Durable avec Nous.</h2>
+                        <p><i>"L'important dans <strong>la transformation numérique</strong>ce n'est pas la
+                                technologie, c'est la <strong> culture</strong>"</i></p>
+                        <h3>Mettez votre entreprise en avant</h3>
+                        <a href="#">en savoir plus</a>
+                        <a href="#">découvrir plus</a>
+                    </div>
+                    <div class="splide__slide">
+                        <h2>Le numérique est notre terrain de jeu.</h2>
+                        <p><i>"L'important dans <strong>la transformation numérique</strong> ce n'est pas la
+                                technologie, c'est la <strong> culture</strong>"</i></p>
+                        <h3>Notre métier c’est votre succè</h3>
+                        <a href="#">en savoir plus</a>
+                        <a href="#">découvrir plus</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--------------------------main--------------------------------->
+    <main>
+        <h2>le codeurs </h2>
+        <div class="main_contenaire">
+            <div>
+                <img src="album/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg" alt="image de Developpement web">
+                <h3>Developpement web</h3>
+                <p>
+                    Le développement web repose sur l’utilisation des langages (HTML/CSS, JavaScript, PHP…) pour écrire
+                    des programmes qui sont ensuite exécutés par les ordinateurs. Les instructions sont mises en place
+                    sur Internet et sont effectuées sur des serveurs.</p>
+            </div>
+            <div>
+                <img src="album/altumcode-PuxTq4DwUHE-unsplash.jpg" alt="">
+                <h3>Developpement mobile</h3>
+                <p>A l’ère du tout numérique, le développement des applications mobiles a connu une expansion
+                    grandissante ces dernières années, soutenu par l’explosion des nouvelles plateforme technologique (
+                    tablette, montre connectée, smartphone…).</p>
+            </div>
+            <div>
+                <h3>l'UX et l'UI design</h3>
+                <p>La conception de l'expérience utilisateur, sur laquelle reposent les exigences centralisées de la «
+                    recherche sur la conception de l'expérience utilisateur », définit l'expérience qu'un utilisateur
+                    vivrait lors de son interaction avec une entreprise, ses services et ses produits</p>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var splide = new Splide('.splide', {
+            width: "100%",
+            start: 0,
+            perPage: 1,
+            gap: "50px",
+            pagination: true,
+            focus: "center",
+            type: "loop",
+            autoplay: true,
+            interval: 3000,
+        });
+        splide.mount();
+    });
+</script>
+
+</html>
