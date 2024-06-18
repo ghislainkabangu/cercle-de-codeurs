@@ -42,39 +42,24 @@ header {
     padding: 50px;
     padding-bottom: 100px;
     overflow: hidden;
-    background-image: url("album/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg");
+    background-image: url("album/fond.jpg");
+    background: linear-gradient(to bottom, transparent, mistyrose), url("album/fond.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     word-wrap: break-word;
     background-position: center;
-    /*animation: headerAnim 5s alternate infinite;*/
-}
-
-@keyframes headerAnim {
-    from {
-        background-image: url("album/james-harrison-vpOeXr5wmR4-unsplash.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        word-wrap: break-word;
-        background-position: center;
-    }
-
-    to {
-        background-image: url("album/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        word-wrap: break-word;
-        background-position: center;
-    }
 }
 
 header h2 {
-    font-size: 55px;
+    font-size: 60px;
     color: white;
     padding-top: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
+header p{
+    color: white;
+    color: rgb(255, 0, 93);
+}
 header h3 {
     color: white;
     font-size: 30px;
