@@ -114,9 +114,11 @@ main h2 {
     font-variation-settings:
         "wdth"100;
 }
-main h6{
+
+main h6 {
     color: rgb(206, 67, 118);
 }
+
 /********************************section********************************************/
 section {
     margin: 0 auto;
@@ -173,31 +175,120 @@ section div h4 {
     text-transform: lowercase;
     font-weight: bold;
 }
+
 /**************************article********************************/
-article{
-    margin:0 auto;
+article {
+    margin: 0 auto;
     margin-top: 50px;
     width: 90%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 500px;
 }
-article div{
+
+article div {
     flex-basis: 20%;
     margin-top: 30px;
     text-align: center;
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 0px 8px gainsboro;
+    transition: ease-in-out all 0.5s;
 }
-article div h4{
+
+article div:hover {
+    position: relative;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+article div h4 {
     font-size: small;
     color: gray;
 }
 
+/***************************contactez-nous-----------------*/
+.contact {
+    margin: 0 auto;
+    margin-top: 150px;
+    width: 90%;
+    margin-bottom: 500px;
+}
 
+.contact h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+}
 
+.contactTitre {
+    border-bottom: 4px solid rgb(206, 67, 118);
+
+}
+
+.conta {
+    color: rgb(206, 67, 118);
+}
+.contact h6{
+    text-align: center;
+    text-transform: lowercase;
+}
+.formulaire{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 60%;
+    box-shadow: 0px 0px 10px  whitesmoke;
+    text-align: center;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(236, 229, 229);
+    border-radius: 10px;
+}
+.formulaire form {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.formulaire form input{
+    padding: 10px;
+    width: 100%;
+    height: 30px;
+    outline-color: rgb(206, 67, 118);
+    border: none;
+    border-radius: 5px;
+}
+.formulaire form input::placeholder{
+    opacity: 0.3;
+}
+.formulaire form textarea{
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    outline-color: rgb(206, 67, 118);
+    border-radius: 5px;
+    border: none;
+}
+.formulaire form textarea::placeholder{
+    opacity: 0.3;
+}
+.formulaire form button{
+    background-color: rgb(206, 67, 118);
+    border: none;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0px 0px 10px  gainsboro;
+}
+.formulaire form button:hover{
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: bold;
+   
+}
 
 
 
@@ -222,11 +313,16 @@ article div h4{
         flex-basis: 90%;
     }
 }
-@media screen and (max-width:1000px){
-    article div{
+
+@media screen and (max-width:1000px) {
+    article div {
         flex-basis: 40%;
     }
+    .formulaire{
+        width: 80%;
+    }
 }
+
 @media screen and (max-width:700px) {
     header {
         text-align: center;
@@ -242,7 +338,11 @@ article div h4{
         border-radius: 10px;
         box-shadow: 0px 0px 5px gainsboro;
     }
-    article div{
+
+    article div {
         flex-basis: 100%;
+    }
+    .formulaire{
+        width: 90%;
     }
 }
