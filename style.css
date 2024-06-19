@@ -126,8 +126,6 @@ section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-bottom: 300px;
-
 }
 
 section div {
@@ -175,6 +173,29 @@ section div h4 {
     text-transform: lowercase;
     font-weight: bold;
 }
+/**************************article********************************/
+article{
+    margin:0 auto;
+    margin-top: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 500px;
+}
+article div{
+    flex-basis: 20%;
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px gainsboro;
+}
+article div h4{
+    font-size: small;
+    color: gray;
+}
+
 
 
 
@@ -201,7 +222,11 @@ section div h4 {
         flex-basis: 90%;
     }
 }
-
+@media screen and (max-width:1000px){
+    article div{
+        flex-basis: 40%;
+    }
+}
 @media screen and (max-width:700px) {
     header {
         text-align: center;
@@ -214,5 +239,10 @@ section div h4 {
 
     .sectionDiv2 div img {
         animation: none;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px gainsboro;
+    }
+    article div{
+        flex-basis: 100%;
     }
 }
