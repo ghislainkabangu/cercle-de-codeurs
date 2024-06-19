@@ -10,13 +10,14 @@ body {
 }
 
 .barre_entete {
-    background-color: rgb(255, 0, 93);
+    background-color: rgb(206, 67, 118);
     padding: 15px;
 }
 
 .barre_entete h1 {
     font-size: small;
     color: white;
+    text-transform: uppercase;
 }
 
 .barre_entete a {
@@ -56,10 +57,11 @@ header h2 {
     padding-top: 50px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-header p{
-    color: white;
-    color: rgb(255, 0, 93);
+
+header p {
+    color: rgb(206, 67, 118);
 }
+
 header h3 {
     color: white;
     font-size: 30px;
@@ -80,3 +82,86 @@ header a:hover {
 }
 
 /*******************************************************/
+main {
+    margin-top: 50px;
+    padding: 10px;
+    margin-bottom: 200px;
+}
+
+main h2,
+h6 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main_contenaire {
+    margin: 0 auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main_contenaire div {
+    margin-top: 50px;
+    flex-basis: 20%;
+    padding: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px whitesmoke;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.main_contenaire div:hover {
+    box-shadow: 0px 0px 10px mistyrose;
+}
+
+.main_contenaire div img {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+}
+
+.main_contenaire div p {
+    text-align: justify;
+}
+
+.main_contenaire div a {
+    text-decoration: none;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-color: inherit;
+    color: rgb(206, 67, 118);
+    border: 1px solid rgb(206, 67, 118);
+    transition: ease-in-out 0.5s;
+}
+
+.main_contenaire div a:hover {
+    border: none;
+    background-color: rgb(206, 67, 118);
+    color: white;
+    letter-spacing: 5px;
+}
+
+
+
+@media screen and (max-width:1250px) {
+    .main_contenaire div {
+        flex-basis: 40%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .main_contenaire div {
+        flex-basis: 80%;
+    }
+}
