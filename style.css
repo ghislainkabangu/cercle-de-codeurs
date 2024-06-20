@@ -212,7 +212,6 @@ article div h4 {
     margin: 0 auto;
     margin-top: 150px;
     width: 90%;
-    margin-bottom: 500px;
 }
 
 .contact h3 {
@@ -280,6 +279,7 @@ article div h4 {
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
+    border-radius: 5px;
     transition: ease-in-out 0.5s;
     box-shadow: 0px 0px 10px  gainsboro;
 }
@@ -289,8 +289,12 @@ article div h4 {
     font-weight: bold;
    
 }
-
-
+/*******************************footer****************************************/
+footer{
+    margin-top: 200px;
+    background-color: #010101;
+    padding: 20px;
+}
 
 
 
