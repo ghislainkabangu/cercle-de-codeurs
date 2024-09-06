@@ -8,9 +8,11 @@ body {
     font-weight: 300;
     font-style: normal;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
+
 .barre_entete {
     background-color: rgb(206, 67, 118);
     padding: 5px;
@@ -112,12 +114,15 @@ section {
     flex-basis: 20%;
     border-radius: 10px;
     margin-top: 20px;
+    background-color: rgba(214, 210, 210, 0.2);
     transition: ease-in-out 0.5s;
 }
-.boxService div:hover{
-    background-color: rgba(214, 210, 210, 0.2);
+
+.boxService div:hover {
+    background-color: white;
     cursor: pointer;
 }
+
 .boxService div i {
     font-size: 50px;
 }
@@ -125,17 +130,21 @@ section {
 .boxService div h5 {
     font-size: 20px;
 }
-.serTitCol{
+
+.serTitCol {
     color: rgb(206, 67, 118);
 }
-.serTitColB{
+
+.serTitColB {
     color: rgb(75, 115, 167);
 }
+
 .boxService div p {
     text-align: justify;
 }
+
 /**************************baniere image ****************/
-.banniere{
+.banniere {
     margin-top: 100px;
     padding: 50px;
     background-image: url("album/banniere.jpg");
@@ -145,26 +154,39 @@ section {
     background-position: center;
     transition: ease-in-out 0.5s;
 }
-.JsimageBg{
+
+.JsimageBg {
     transition: ease-in-out 0.5s;
-    background-image: url("album/marvin-meyer-SYTO3xs06fU-unsplash.jpg");
+    background-image: url("album/homme2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
     background-position: center;
 }
-.Boxbaniere{
+
+.Boxbaniere {
     width: 700px;
 }
-.Boxbaniere h5{
+
+.Boxbaniere h5 {
     color: white;
     font-size: 30px;
 }
-.Boxbaniere p{
+
+.Boxbaniere p {
     color: white;
 }
-.style{
-    color: rgb(206, 67, 118);
+
+.Boxbaniere a {
+    color: white;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.Boxbaniere a:hover{
+    font-weight: bold;
+    transition: 0.5s;
 }
 /**************************article********************************/
 
@@ -313,7 +335,8 @@ footer {
         flex-basis: 40%;
         margin-top: 30px;
     }
-    .Boxbaniere{
+
+    .Boxbaniere {
         width: 90%;
     }
 }
@@ -333,12 +356,15 @@ footer {
     .boxService div {
         flex-basis: 80%;
     }
-    .banniere{
+
+    .banniere {
         padding: 30px;
     }
-    .Boxbaniere{
+
+    .Boxbaniere {
         width: 100%;
     }
+
     .footerContenaire div {
         flex-basis: 100%;
     }
