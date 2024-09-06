@@ -210,7 +210,15 @@ article {
     background-color: rgba(214, 210, 210, 0.2);
     transition: ease-in-out 0.5s;
 }
-
+.Boxarticle div i{
+    font-size: 40px;
+}
+.Boxarticle div h5{
+    font-size: 30px;
+}
+.Boxarticle div p{
+    text-align: justify;
+}
 /***************************contactez-nous-----------------*/
 .contact {
     margin: 0 auto;
