@@ -184,12 +184,32 @@ section {
     text-transform: uppercase;
     transition: 0.5s;
 }
-.Boxbaniere a:hover{
+
+.Boxbaniere a:hover {
     font-weight: bold;
     transition: 0.5s;
 }
-/**************************article********************************/
 
+/**************************article********************************/
+article {
+    margin: auto;
+    width: 95%;
+    margin-top: 100px
+}
+
+.Boxarticle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Boxarticle div {
+    box-shadow: 0px 0px 10px gainsboro;
+    padding: 10px;
+    flex-basis: 20%;
+    margin-top: 20px;
+    background-color: rgba(214, 210, 210, 0.2);
+    transition: ease-in-out 0.5s;
+}
 
 /***************************contactez-nous-----------------*/
 .contact {
@@ -339,6 +359,15 @@ footer {
     .Boxbaniere {
         width: 90%;
     }
+
+    .Boxarticle {
+        flex-wrap: wrap;
+    }
+
+    .Boxarticle div {
+        flex-basis: 40%;
+        margin-top: 30px;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -363,6 +392,10 @@ footer {
 
     .Boxbaniere {
         width: 100%;
+    }
+
+    .Boxarticle div {
+        flex-basis: 80%;
     }
 
     .footerContenaire div {
