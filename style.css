@@ -81,11 +81,12 @@ main {
 }
 
 main h2 {
-  
     font-size: 50px;
-    color: rgb(206, 67, 118);
-    color: rgb(75, 115, 167);
     word-wrap: break-word;
+}
+
+.decoTexte {
+    color: rgb(206, 67, 118);
 }
 
 main p {
@@ -209,15 +210,49 @@ article {
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
 }
-.Boxarticle div i{
+
+.Boxarticle div i {
     font-size: 40px;
 }
-.Boxarticle div h5{
+
+.Boxarticle div h5 {
     font-size: 30px;
 }
-.Boxarticle div p{
+
+.Boxarticle div p {
     text-align: justify;
 }
+
+/***************************equipe*******************************/
+.equipe {
+    margin: auto;
+    width: 95%;
+    margin-top: 150px;
+}
+
+.equipe h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.contenaireEquipe {
+    display: flex;
+    justify-content: space-around;
+}
+
+.contenaireEquipe div {
+    flex-basis: 20%;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.contenaireEquipe div img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 /***************************contactez-nous-----------------*/
 .contact {
     margin: 0 auto;
@@ -236,7 +271,6 @@ footer {
 .footerContenaire {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
 }
 
 .footerContenaire div {
@@ -246,7 +280,7 @@ footer {
 
 .footerContenaire div h4 {
     text-transform: uppercase;
-    color:gainsboro;
+    color: gainsboro;
 }
 
 .footerContenaire div ul {
@@ -257,18 +291,22 @@ footer {
     padding-top: 10px;
     transition: ease-in-out 0.5s;
 }
-.footerContenaire div ul li a{
+
+.footerContenaire div ul li a {
     text-decoration: none;
     color: black;
     color: white;
 }
-.footerContenaire div ul li a i{
+
+.footerContenaire div ul li a i {
     font-size: 20px
 }
-.copy{
+
+.copy {
     font-size: xx-small;
     text-align: right;
 }
+
 /***********************media**************/
 @media screen and (max-width:1100px) {
     .boxService {
@@ -292,6 +330,22 @@ footer {
         flex-basis: 40%;
         margin-top: 30px;
     }
+
+    .contenaireEquipe {
+        flex-wrap: wrap;
+    }
+
+    .contenaireEquipe div {
+        flex-basis: 40%;
+    }
+
+    .footerContenaire {
+        flex-wrap: wrap;
+    }
+
+    .footerContenaire div {
+        flex-basis: 40%;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -305,12 +359,15 @@ footer {
         color: white;
         padding-top: 30px;
     }
-    main{
+
+    main {
         margin-top: 50px
     }
-    section{
+
+    section {
         margin-top: 50px;
     }
+
     .boxService div {
         flex-basis: 80%;
     }
@@ -330,5 +387,13 @@ footer {
 
     .footerContenaire div {
         flex-basis: 100%;
+    }
+
+    .equipe {
+        margin-top: 100px;
+    }
+
+    .contenaireEquipe div {
+        flex-basis: 80%;
     }
 }
