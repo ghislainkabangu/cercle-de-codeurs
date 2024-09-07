@@ -61,7 +61,7 @@ header h2 {
 
 header p {
     font-size: 15px;
-    color:white;
+    color: white;
     font-weight: bold;
 }
 
@@ -205,10 +205,13 @@ article {
     padding: 10px;
     flex-basis: 20%;
     margin-top: 20px;
-    background-color: rgba(214, 210, 210, 0.2);
     border-radius: 10px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+}
+
+.difFont {
+    background-color: rgba(214, 210, 210, 0.2);
 }
 
 .Boxarticle div i {
@@ -252,14 +255,17 @@ article {
     object-fit: cover;
     border-radius: 50%;
 }
-.contenaireEquipe div h5{
+
+.contenaireEquipe div h5 {
     font-size: 20px;
     color: rgb(75, 115, 167);
 }
-.contenaireEquipe div h6{
+
+.contenaireEquipe div h6 {
     font-size: 15px;
     color: rgb(206, 67, 118);
 }
+
 /***************************contactez-nous-----------------*/
 .contact {
     margin: 0 auto;
