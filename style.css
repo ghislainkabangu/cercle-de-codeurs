@@ -61,7 +61,7 @@ header h2 {
 
 header p {
     font-size: 15px;
-    color: black;
+    color:white;
     font-weight: bold;
 }
 
@@ -252,7 +252,14 @@ article {
     object-fit: cover;
     border-radius: 50%;
 }
-
+.contenaireEquipe div h5{
+    font-size: 20px;
+    color: rgb(75, 115, 167);
+}
+.contenaireEquipe div h6{
+    font-size: 15px;
+    color: rgb(206, 67, 118);
+}
 /***************************contactez-nous-----------------*/
 .contact {
     margin: 0 auto;
