@@ -208,8 +208,17 @@ article {
     border-radius: 10px;
     border-top-right-radius: 50px;
     border-bottom-left-radius: 50px;
+    transition: ease-in-out 0.5s;
 }
-
+.Boxarticle div:hover{
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+    background-color: rgb(206, 67, 118);
+    color: white;
+    box-shadow: none;
+    transition: ease-in-out 0.5s;
+}
 .difFont {
     background-color: rgba(214, 210, 210, 0.2);
 }
@@ -221,7 +230,15 @@ article {
 .Boxarticle div h5 {
     font-size: 30px;
 }
-
+.Boxarticle div a{
+    color: rgb(75, 115, 167);
+    transition: ease-in-out 0.5s;
+}
+.Boxarticle div a:hover{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
 .Boxarticle div p {
     text-align: justify;
 }
