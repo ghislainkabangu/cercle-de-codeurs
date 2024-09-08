@@ -210,7 +210,8 @@ article {
     border-bottom-left-radius: 50px;
     transition: ease-in-out 0.5s;
 }
-.Boxarticle div:hover{
+
+.Boxarticle div:hover {
     cursor: pointer;
     position: relative;
     bottom: 10px;
@@ -219,6 +220,7 @@ article {
     box-shadow: none;
     transition: ease-in-out 0.5s;
 }
+
 .difFont {
     background-color: rgba(214, 210, 210, 0.2);
 }
@@ -230,15 +232,18 @@ article {
 .Boxarticle div h5 {
     font-size: 30px;
 }
-.Boxarticle div a{
+
+.Boxarticle div a {
     color: rgb(75, 115, 167);
     transition: ease-in-out 0.5s;
 }
-.Boxarticle div a:hover{
+
+.Boxarticle div a:hover {
     color: white;
     font-weight: bold;
     text-decoration: none;
 }
+
 .Boxarticle div p {
     text-align: justify;
 }
@@ -287,7 +292,54 @@ article {
 .contact {
     margin: 0 auto;
     margin-top: 150px;
-    width: 90%;
+    width: 95%;
+}
+
+.contact h4 {
+    text-align: center;
+    color: rgb(206, 67, 118);
+    font-size: 30px;
+}
+
+form {
+    margin: auto;
+    width: 550px;
+}
+
+form fieldset {
+    border: 3px double gray;
+}
+
+form legend {
+    color: rgb(206, 67, 118);
+}
+
+form input {
+    width: 95%;
+    border: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    border-left: 1px solid gray;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    outline-color: rgb(206, 67, 118);
+}
+
+form ::-webkit-input-placeholder {
+    font-style: italic;
+    opacity: 0.3;
+}
+
+form textarea {
+    width: 95%;
+    padding: 5px;
+    outline-color: rgb(206, 67, 118);
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 /*******************************footer****************************************/
@@ -425,5 +477,13 @@ footer {
 
     .contenaireEquipe div {
         flex-basis: 80%;
+    }
+
+    .contact {
+        margin-top: 100px;
+    }
+
+    form {
+        width: 90%;
     }
 }
