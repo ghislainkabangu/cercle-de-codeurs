@@ -2,7 +2,7 @@ body {
     margin: 0 auto;
     padding: 0 auto;
     background-color: white;
-    color: gray;
+    color: black;
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -81,13 +81,21 @@ main {
 }
 
 main h2 {
-    font-size: 50px;
+    font-size: 70px;
     word-wrap: break-word;
+    color: rgb(206, 67, 118);
+    color: black;
 }
 
-.decoTexte {
-    color: rgb(206, 67, 118);
+main p {
+    display: none;
 }
+
+/*
+.decoTexte {
+border-bottom: 5px solid rgb(206, 67, 118);
+color: rgb(75, 115, 167);
+}*/
 
 main p {
     text-align: justify;
@@ -104,20 +112,22 @@ section {
 .boxService {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .boxService div {
     box-shadow: 0px 0px 10px gainsboro;
-    padding: 10px;
-    flex-basis: 20%;
+    padding: 20px;
+    flex-basis: 40%;
     border-radius: 10px;
     margin-top: 20px;
-    background-color: rgba(214, 210, 210, 0.2);
+    background-color: white;
+    border-bottom: 3px solid rgb(75, 115, 167);
     transition: ease-in-out 0.5s;
 }
 
 .boxService div:hover {
-    background-color: white;
+    background-color: rgba(214, 210, 210, 0.2);
     cursor: pointer;
 }
 
@@ -126,7 +136,7 @@ section {
 }
 
 .boxService div h5 {
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .serTitCol {
@@ -198,16 +208,18 @@ article {
 .Boxarticle {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .Boxarticle div {
     box-shadow: 0px 0px 5px gainsboro;
-    padding: 10px;
-    flex-basis: 20%;
+    padding: 18px;
+    flex-basis: 40%;
     margin-top: 20px;
     border-radius: 10px;
-    border-top-right-radius: 50px;
-    border-bottom-left-radius: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom: 5px solid rgb(206, 67, 118);
     transition: ease-in-out 0.5s;
 }
 
@@ -215,14 +227,8 @@ article {
     cursor: pointer;
     position: relative;
     bottom: 10px;
-    background-color: rgb(206, 67, 118);
-    color: white;
-    box-shadow: none;
+    background-color: gainsboro;
     transition: ease-in-out 0.5s;
-}
-
-.difFont {
-    background-color: rgba(214, 210, 210, 0.2);
 }
 
 .Boxarticle div i {
@@ -234,14 +240,14 @@ article {
 }
 
 .Boxarticle div a {
-    color: rgb(75, 115, 167);
-    transition: ease-in-out 0.5s;
+    color: rgb(206, 67, 118);
+    text-decoration: none;
+    transition: 0.5s;
 }
 
 .Boxarticle div a:hover {
-    color: white;
     font-weight: bold;
-    text-decoration: none;
+    transition: 0.5s;
 }
 
 .Boxarticle div p {
@@ -250,17 +256,22 @@ article {
 
 /***************************equipe*******************************/
 .equipe {
-    margin: auto;
-    width: 95%;
     margin-top: 150px;
+    background-color: black;
+    background-color: gray;
+    padding: 10px;
+    padding-bottom: 100px;
 }
 
 .equipe h3 {
     text-align: center;
+    color: white;
     font-size: 30px;
 }
 
 .contenaireEquipe {
+    margin: auto;
+    width: 95%;
     display: flex;
     justify-content: space-around;
 }
@@ -280,12 +291,12 @@ article {
 
 .contenaireEquipe div h5 {
     font-size: 20px;
-    color: rgb(75, 115, 167);
+    color: white;
 }
 
 .contenaireEquipe div h6 {
     font-size: 15px;
-    color: rgb(206, 67, 118);
+    color: white;
 }
 
 /***************************contactez-nous-----------------*/
@@ -299,27 +310,34 @@ article {
     text-align: center;
     color: rgb(206, 67, 118);
     font-size: 30px;
+    display: none;
 }
 
 form {
     margin: auto;
-    width: 550px;
+    width: 900px;
+    box-shadow: 0px 0px 10px gray;
 }
 
 form fieldset {
-    border: 3px double gray;
+    border: 1px solid black;
+    border: none;
+    padding: 30px;
 }
 
 form legend {
     color: rgb(206, 67, 118);
+    font-weight: bold;
+    font-size: 25px;
+    display: none;
 }
 
 form input {
-    width: 95%;
+    width: 100%;
+    height: 35px;
     border: none;
     padding: 5px;
-    border-bottom: 1px solid gray;
-    border-left: 1px solid gray;
+    border: 1px solid black;
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
@@ -328,18 +346,32 @@ form input {
 }
 
 form ::-webkit-input-placeholder {
-    font-style: italic;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 form textarea {
-    width: 95%;
+    width: 100%;
+    height: 100px;
     padding: 5px;
     outline-color: rgb(206, 67, 118);
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+
+form button {
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+    background-color: rgb(206, 67, 118);
+    transition: 0.5s;
+}
+
+form button:hover {
+    background-color: rgb(75, 115, 167);
+    transition: 0.5s;
 }
 
 /*******************************footer****************************************/
@@ -363,6 +395,7 @@ footer {
 .footerContenaire div h4 {
     text-transform: uppercase;
     color: gainsboro;
+    font-size: 25px;
 }
 
 .footerContenaire div ul {
@@ -421,6 +454,10 @@ footer {
         flex-basis: 40%;
     }
 
+    form {
+        width: 700px;
+    }
+
     .footerContenaire {
         flex-wrap: wrap;
     }
@@ -444,6 +481,10 @@ footer {
 
     main {
         margin-top: 50px
+    }
+
+    main h2 {
+        font-size: 50px;
     }
 
     section {
