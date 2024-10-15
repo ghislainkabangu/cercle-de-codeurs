@@ -26,13 +26,35 @@ html {
     font-style: normal;
 }
 
-.barre_entete a {
-    text-decoration: none;
-}
-
 .Link_barrre {
     float: right;
 }
+
+.barre_entete nav ul {
+    text-align: center;
+}
+
+.barre_entete nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 30px 0px 30px;
+}
+
+.barre_entete nav ul li a {
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.barre_entete nav ul li a:hover {
+    border-bottom: 1px solid white;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
 
 /*********************************************header caroussel***********************************/
 header {
@@ -57,17 +79,26 @@ header h2 {
     font-style: normal;
     font-variation-settings:
         "wdth"100;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header p {
     font-size: 15px;
     color: white;
     font-weight: bold;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 header h3 {
     color: white;
     font-size: 30px;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 /******************************main*************************/
@@ -84,7 +115,10 @@ main h2 {
     font-size: 70px;
     word-wrap: break-word;
     color: rgb(206, 67, 118);
-    color: black;
+    /* color: black;*/
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 main p {
@@ -137,6 +171,9 @@ section {
 
 .boxService div h5 {
     font-size: 30px;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .serTitCol {
@@ -163,22 +200,16 @@ section {
     transition: ease-in-out 0.5s;
 }
 
-.JsimageBg {
-    transition: ease-in-out 0.5s;
-    background-image: url("album/nubelson-fernandes-UcYBL5V0xWQ-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    background-position: center;
-}
-
 .Boxbaniere {
     width: 700px;
 }
 
 .Boxbaniere h5 {
     color: white;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .Boxbaniere p {
@@ -237,10 +268,16 @@ article {
 
 .Boxarticle div h5 {
     font-size: 30px;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .Boxarticle div a {
     color: rgb(206, 67, 118);
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
     text-decoration: none;
     transition: 0.5s;
 }
@@ -260,13 +297,16 @@ article {
     background-color: black;
     background-color: gray;
     padding: 10px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 }
 
 .equipe h3 {
     text-align: center;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .contenaireEquipe {
@@ -277,26 +317,31 @@ article {
 }
 
 .contenaireEquipe div {
-    flex-basis: 20%;
+    flex-basis: 18%;
+    padding: 15px;
     margin-top: 50px;
     text-align: center;
+    background-color: white;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .contenaireEquipe div img {
     width: 160px;
-    height: 160px;
+    width: 100%;
     object-fit: cover;
-    border-radius: 50%;
 }
 
 .contenaireEquipe div h5 {
     font-size: 20px;
-    color: white;
+    color: gray
 }
 
 .contenaireEquipe div h6 {
     font-size: 15px;
-    color: white;
+    color: gray;
+    color: rgb(206, 67, 118);
 }
 
 /***************************contactez-nous-----------------*/
@@ -310,15 +355,20 @@ article {
     text-align: center;
     color: rgb(206, 67, 118);
     font-size: 30px;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 form {
     margin: auto;
     width: 900px;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 form fieldset {
-    border: 1px solid black;
     border: none;
 }
 
@@ -369,15 +419,18 @@ form textarea {
 
 form button {
     width: 30%;
-    height: 40px;
+    height: 45px;
     border: none;
     color: white;
     background-color: rgb(206, 67, 118);
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
     transition: 0.5s;
 }
 
 form button:hover {
-    height: 50px;
+    height: 55px;
     transition: 0.5s;
 }
 
@@ -403,6 +456,9 @@ footer {
     text-transform: uppercase;
     color: white;
     font-size: 25px;
+    font-family: "Playwrite AU VIC", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .footerContenaire div ul {
@@ -433,6 +489,10 @@ footer {
 
 /***********************media**************/
 @media screen and (max-width:1100px) {
+    .barre_entete nav ul li {
+        padding: 0px 15px 0px 15px;
+    }
+
     .boxService {
         flex-wrap: wrap;
     }
@@ -477,6 +537,10 @@ footer {
 }
 
 @media screen and (max-width:700px) {
+    .barre_entete nav ul li {
+        padding: 0px 10px 0px 10px;
+    }
+
     header {
         text-align: center;
         padding: 20px;
@@ -512,6 +576,12 @@ footer {
     .Boxbaniere {
         width: 100%;
     }
+
+    .Boxbaniere h5 {
+        color: white;
+        font-size: 20px;
+    }
+
 
     .Boxarticle div {
         flex-basis: 80%;

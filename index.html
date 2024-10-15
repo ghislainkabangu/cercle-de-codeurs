@@ -30,12 +30,22 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
 </head>
+<!--------------------------------------------------------------------------------------------------------------------------->
 
 <body>
     <div class="barre_entete">
         <h1>le cercle des codeurs <i class="fa-solid fa-laptop" style="font-size: 15px;"></i><span
                 class="Link_barrre"><i class="fa-solid fa-keyboard" style="font-size: 20px;"></i></span>
         </h1>
+        <nav>
+            <ul>
+                <li><a href="#service">nos service</a></li>
+                <li><a href="#pespectives">pespectives</a></li>
+                <li><a href="#equipe">équipe</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#footer">savoir plus+</a></li>
+            </ul>
+        </nav>
     </div>
 
     <!--------------------header bloc des caroussel---------------------------->
@@ -87,7 +97,7 @@
         <!--  
         <h4>Nous saurons vous accompange dans tous vos projets innovants et nous sommes prêts à vous soutenir dans la concréisation 
             de votre projets. </h4>-->
-        <div class="boxService">
+        <div id="service" class="boxService">
             <div>
                 <i class="fa-solid fa-laptop"></i>
                 <h5 class="serTitCol">Edition de Logiciels</h5>
@@ -131,7 +141,7 @@
     </div>
     <!--------------------------------blog-----------g----->
     <article>
-        <div class="Boxarticle">
+        <div id="pespectives" class="Boxarticle">
             <div>
                 <i class="fa-solid fa-earth-africa"></i>
                 <h5>Développer votre précense sur internet</h5>
@@ -159,7 +169,7 @@
         </div>
     </article>
     <!------------------------------------aside equipe-------------------------->
-    <aside class="equipe">
+    <aside id="equipe" class="equipe">
         <h3>Avec une équipe d’ingénieurs experte dans les technologies opensource, nous saurons vous accompanger dans
             tous vos projets innovants et nous sommes prêts à vous soutenir dans la concrétisation
             de votre projet.</h3>
@@ -180,14 +190,14 @@
                 <h6>Fullstack dev web & Mobile</h6>
             </div>
             <div>
-                <img src="album/front-view-woman-posing-studio.jpg" alt="">
+                <img src="album/front-view-woman-posing-studio.jpg" alt="image Developpeur">
                 <h5>Merveille Miss</h5>
                 <h6>Developpeuse Logiciels</h6>
             </div>
         </div>
     </aside>
     <!----------------------------------formulaire---------------------------------------->
-    <div class="contact">
+    <div id="contact" class="contact">
         <h4>contactez-nous dès maintenant</h4>
         <form action="">
             <fieldset>
@@ -206,7 +216,7 @@
 
     </div>
     <!--------------- --------------footer----------------------------->
-    <footer>
+    <footer id="footer">
         <div class="footerContenaire">
             <div>
                 <h4>Informations</h4>
