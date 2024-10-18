@@ -278,6 +278,7 @@ article {
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: none;
+    font-size: small;
     transition: 0.5s;
 }
 
